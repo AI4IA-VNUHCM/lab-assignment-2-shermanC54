@@ -19,7 +19,7 @@ int main(int argc, char *argv[]) {
 	int n = atoi(argv[1]);
 	int result;
 	//Your codes here
-	int fact = 1 
+	int fact = 1;
 	if(n%2){
 		for(int i = 1;i <= n;i+=2){
 			fact*=i;
