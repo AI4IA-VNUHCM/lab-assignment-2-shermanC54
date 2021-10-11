@@ -29,7 +29,7 @@ int main(int argc, char *argv[]) {
 			fact*=i;
 		}
 	}
-	fact = result;
+	result = fact;
 	printf("%d", result);
 	return 0;
 }
