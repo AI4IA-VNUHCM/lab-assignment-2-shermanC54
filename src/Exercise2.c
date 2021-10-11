@@ -25,7 +25,7 @@ int main(int argc, char *argv[]) {
 			fact*=i;
 		}
 	}else{
-		for(int i=1;i<= n;i+=2){
+		for(int i=2;i<= n;i+=2){
 			fact*=i;
 		}
 	}
