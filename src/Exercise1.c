@@ -19,7 +19,23 @@ int main(int argc, char *argv[]) {
 	float distance = atof(argv[1]);
 	int result;
 	//Your codes here
-	
+	float num;
+	int cost = 15000;
+	num = distance;
+	distance = distance -2;
+	if(distance > 0){
+		if(distance <= 28){
+			cost = cost + distance*8000;
+		}else{
+			cost = cost + 28*8000;
+			distance = distance - 28;
+			cost = cost + distance*5000;
+		}
+	}
+	if(num <= 0){
+		result = 0;
+	}
+	result = cost;
 	printf("%d", result);
 	return 0;
 }
