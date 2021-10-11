@@ -17,8 +17,7 @@ int isPrime(int n)
 		return 1;
 	}
 	else 
-	{
-		for (int i = 2; i <= sqrt(n); i++)
+	{ for (int i = 2; i <= sqrt(n); i++)
 		{
 			if (n % i == 0)
 			{
@@ -38,7 +37,7 @@ int main(int argc, char *argv[]) {
 	while (testcase > 1)
 	{
 		do
-		{
+		{ 
 			i++;
 		} while (!isPrime(i));
 		
@@ -51,7 +50,6 @@ int main(int argc, char *argv[]) {
 			}
 			else printf("%d", i);
 		}
-		
 	}
 	return 0;
 }
